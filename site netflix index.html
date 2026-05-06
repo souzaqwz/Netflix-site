@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Catálogo</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+ <link rel="stylesheet" href="style.css/style.css">
+</head>
+
+<body>
+    <a href="style.css/style.css"></a>
+    <div class="netflix-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="logo-netflix">
+        <span class="saudacao">E aí, Arthur! 🍿 Pronto pra maratonar hoje?</span>
+    </div>
+
+    <div class="container">
+        <div class="busca-container">
+            <input type="text" id="busca" placeholder="Buscar por título...">
+        </div>
+
+        <div class="filtros">
+            <button class="filtro-btn ativo" data-genero="todos">Todos</button>
+            <button class="filtro-btn" data-genero="Ação">Ação</button>
+            <button class="filtro-btn" data-genero="Drama">Drama</button>
+            <button class="filtro-btn" data-genero="Ficção">Ficção</button>
+            <button class="filtro-btn" data-genero="Animação">Animação</button>
+            <button class="filtro-btn" data-genero="Comédia">Comédia</button>
+            <button class="filtro-btn" data-genero="Fantasia">Fantasia</button>
+            <button class="filtro-btn" data-genero="Romance">Romance</button>
+            <button class="filtro-btn" data-genero="Aventura">Aventura</button>
+        </div>
+
+        <div class="grade">
+
+            <!-- FILME 1 -->
+            <div class="card-filme" data-genero="Drama">
+                <img src="Imagens\Poderoso chefao 1.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">O Poderoso Chefão</h2>
+                    <div class="ano-duracao"><span>1972</span><span>175 min</span></div>
+                    <div class="info"><span class="genero">Drama/Crime</span><div class="avaliacao"><i class="fa-solid fa-star"></i>9.2</div></div>
+                    <p class="descricao">A saga da família mafiosa Corleone em Nova York.</p>
+                    <a href="https://www.imdb.com/title/tt0068646/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 2 -->
+            <div class="card-filme" data-genero="Ficção">
+                <img src="Imagens\Interestelar.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Interestelar</h2>
+                    <div class="ano-duracao"><span>2014</span><span>169 min</span></div>
+                    <div class="info"><span class="genero">Ficção</span><div class="avaliacao"><i class="fa-solid fa-star"></i>8.6</div></div>
+                    <p class="descricao">Uma equipe de astronautas viaja por um buraco de minhoca para salvar a humanidade.</p>
+                    <a href="https://www.imdb.com/title/tt0816692/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 3 -->
+            <div class="card-filme" data-genero="Ação">
+                <img src="Imagens\Batman.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Batman: O Cavaleiro das Trevas</h2>
+                    <div class="ano-duracao"><span>2008</span><span>152 min</span></div>
+                    <div class="info"><span class="genero">Ação</span><div class="avaliacao"><i class="fa-solid fa-star"></i>9.0</div></div>
+                    <p class="descricao">Batman enfrenta o caos causado pelo vilão Coringa em Gotham.</p>
+                    <a href="https://www.imdb.com/title/tt0468569/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 4 -->
+            <div class="card-filme" data-genero="Ficção">
+                <img src="Imagens\Matrix.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Matrix</h2>
+                    <div class="ano-duracao"><span>1999</span><span>136 min</span></div>
+                    <div class="info"><span class="genero">Ficção</span><div class="avaliacao"><i class="fa-solid fa-star"></i>8.7</div></div>
+                    <p class="descricao">Um hacker descobre que o mundo é uma simulação controlada por máquinas.</p>
+                    <a href="https://www.imdb.com/title/tt0133093/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 5 -->
+            <div class="card-filme" data-genero="Drama">
+                <img src="Imagens\Clube da Luta.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Clube da Luta</h2>
+                    <div class="ano-duracao"><span>1999</span><span>139 min</span></div>
+                    <div class="info"><span class="genero">Drama</span><div class="avaliacao"><i class="fa-solid fa-star"></i>8.8</div></div>
+                    <p class="descricao">Um homem insatisfeito cria um clube secreto de luta.</p>
+                    <a href="https://www.imdb.com/title/tt0137523/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 6 -->
+            <div class="card-filme" data-genero="Drama">
+                <img src="Imagens\Forest Gump.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Forrest Gump</h2>
+                    <div class="ano-duracao"><span>1994</span><span>142 min</span></div>
+                    <div class="info"><span class="genero">Drama</span><div class="avaliacao"><i class="fa-solid fa-star"></i>8.8</div></div>
+                    <p class="descricao">A vida extraordinária de um homem simples que presencia eventos históricos.</p>
+                    <a href="https://www.imdb.com/title/tt0109830/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 7 -->
+            <div class="card-filme" data-genero="Ação">
+                <img src="Imagens\Vingadores.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Vingadores: Ultimato</h2>
+                    <div class="ano-duracao"><span>2019</span><span>181 min</span></div>
+                    <div class="info"><span class="genero">Ação</span><div class="avaliacao"><i class="fa-solid fa-star"></i>8.4</div></div>
+                    <p class="descricao">Os Vingadores tentam reverter as ações devastadoras de Thanos.</p>
+                    <a href="https://www.imdb.com/title/tt4154796/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 8 -->
+            <div class="card-filme" data-genero="Ação">
+                <img src="Imagens\Gladiador.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Gladiador</h2>
+                    <div class="ano-duracao"><span>2000</span><span>155 min</span></div>
+                    <div class="info"><span class="genero">Ação</span><div class="avaliacao"><i class="fa-solid fa-star"></i>8.5</div></div>
+                    <p class="descricao">Um general romano busca vingança após perder sua família e posição.</p>
+                    <a href="https://www.imdb.com/title/tt0172495/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 9 -->
+            <div class="card-filme" data-genero="Romance">
+                <img src="Imagens\Titanic.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Titanic</h2>
+                    <div class="ano-duracao"><span>1997</span><span>195 min</span></div>
+                    <div class="info"><span class="genero">Romance</span><div class="avaliacao"><i class="fa-solid fa-star"></i>7.9</div></div>
+                    <p class="descricao">Um romance nasce a bordo do navio Titanic antes do desastre.</p>
+                    <a href="https://www.imdb.com/title/tt0120338/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 10 -->
+            <div class="card-filme" data-genero="Aventura">
+                <img src="Imagens\Jurassic Park.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Jurassic Park</h2>
+                    <div class="ano-duracao"><span>1993</span><span>127 min</span></div>
+                    <div class="info"><span class="genero">Aventura</span><div class="avaliacao"><i class="fa-solid fa-star"></i>8.2</div></div>
+                    <p class="descricao">Dinossauros clonados escapam em um parque temático.</p>
+                    <a href="https://www.imdb.com/title/tt0107290/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 11 -->
+            <div class="card-filme" data-genero="Ficção">
+                <img src="Imagens\Avatar.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Avatar</h2>
+                    <div class="ano-duracao"><span>2009</span><span>162 min</span></div>
+                    <div class="info"><span class="genero">Ficção</span><div class="avaliacao"><i class="fa-solid fa-star"></i>7.9</div></div>
+                    <p class="descricao">Humanos exploram o planeta Pandora e entram em conflito com os nativos.</p>
+                    <a href="https://www.imdb.com/title/tt0499549/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 12 -->
+            <div class="card-filme" data-genero="Ação">
+                <img src="Imagens\Homem aranha.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Homem-Aranha</h2>
+                    <div class="ano-duracao"><span>2002</span><span>121 min</span></div>
+                    <div class="info"><span class="genero">Ação</span><div class="avaliacao"><i class="fa-solid fa-star"></i>7.4</div></div>
+                    <p class="descricao">Peter Parker ganha poderes e se torna o Homem-Aranha.</p>
+                    <a href="https://www.imdb.com/title/tt0145487/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 13 -->
+            <div class="card-filme" data-genero="Animação">
+                <img src="Imagens\Rei Leão.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">O Rei Leão</h2>
+                    <div class="ano-duracao"><span>1994</span><span>88 min</span></div>
+                    <div class="info"><span class="genero">Animação</span><div class="avaliacao"><i class="fa-solid fa-star"></i>8.5</div></div>
+                    <p class="descricao">Simba precisa assumir seu lugar como rei da savana.</p>
+                    <a href="https://www.imdb.com/title/tt0110357/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 14 -->
+            <div class="card-filme" data-genero="Comédia">
+                <img src="Imagens\Shrek.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Shrek</h2>
+                    <div class="ano-duracao"><span>2001</span><span>90 min</span></div>
+                    <div class="info"><span class="genero">Comédia</span><div class="avaliacao"><i class="fa-solid fa-star"></i>7.9</div></div>
+                    <p class="descricao">Um ogro precisa salvar uma princesa para recuperar seu pântano.</p>
+                    <a href="https://www.imdb.com/title/tt0126029/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 15 -->
+            <div class="card-filme" data-genero="Fantasia">
+                <img src="Imagens\Harry Potter.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Harry Potter</h2>
+                    <div class="ano-duracao"><span>2001</span><span>152 min</span></div>
+                    <div class="info"><span class="genero">Fantasia</span><div class="avaliacao"><i class="fa-solid fa-star"></i>7.6</div></div>
+                    <p class="descricao">Um jovem descobre que é um bruxo e entra para Hogwarts.</p>
+                    <a href="https://www.imdb.com/title/tt0241527/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 16 -->
+            <div class="card-filme" data-genero="Ficção">
+                <img src="Imagens\Duna.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Duna</h2>
+                    <div class="ano-duracao"><span>2021</span><span>155 min</span></div>
+                    <div class="info"><span class="genero">Ficção</span><div class="avaliacao"><i class="fa-solid fa-star"></i>8.0</div></div>
+                    <p class="descricao">Uma família nobre disputa o controle do planeta desértico Arrakis.</p>
+                    <a href="https://www.imdb.com/title/tt1160419/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 17 -->
+            <div class="card-filme" data-genero="Ação">
+                <img src="Imagens\Pantera Negra.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Pantera Negra</h2>
+                    <div class="ano-duracao"><span>2018</span><span>134 min</span></div>
+                    <div class="info"><span class="genero">Ação</span><div class="avaliacao"><i class="fa-solid fa-star"></i>7.3</div></div>
+                    <p class="descricao">O rei de Wakanda assume o trono e enfrenta novos inimigos.</p>
+                    <a href="https://www.imdb.com/title/tt1825683/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 18 -->
+            <div class="card-filme" data-genero="Ação">
+                <img src="Imagens\Maveric.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Top Gun: Maverick</h2>
+                    <div class="ano-duracao"><span>2022</span><span>130 min</span></div>
+                    <div class="info"><span class="genero">Ação</span><div class="avaliacao"><i class="fa-solid fa-star"></i>8.3</div></div>
+                    <p class="descricao">Um piloto veterano treina uma nova geração de aviadores.</p>
+                    <a href="https://www.imdb.com/title/tt1745960/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 19 -->
+            <div class="card-filme" data-genero="Drama">
+                <img src="Imagens\Coringa.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Coringa</h2>
+                    <div class="ano-duracao"><span>2019</span><span>122 min</span></div>
+                    <div class="info"><span class="genero">Drama</span><div class="avaliacao"><i class="fa-solid fa-star"></i>8.4</div></div>
+                    <p class="descricao">A origem sombria de um dos vilões mais famosos de Gotham.</p>
+                    <a href="https://www.imdb.com/title/tt7286456/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+            <!-- FILME 20 -->
+            <div class="card-filme" data-genero="Ficção">
+                <img src="Imagens\Star Wars.webp" class="poster">
+                <div class="conteudo">
+                    <h2 class="titulo">Star Wars</h2>
+                    <div class="ano-duracao"><span>1977</span><span>121 min</span></div>
+                    <div class="info"><span class="genero">Ficção</span><div class="avaliacao"><i class="fa-solid fa-star"></i>8.6</div></div>
+                    <p class="descricao">Luke Skywalker entra em uma batalha galáctica contra o Império.</p>
+                    <a href="https://www.imdb.com/title/tt0076759/" target="_blank" class="botao">Saiba Mais</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const botoes = document.querySelectorAll('.filtro-btn');
+        const cards = document.querySelectorAll('.card-filme');
+        const inputBusca = document.getElementById('busca');
+
+        function atualizarFiltros() {
+            const generoAtivo = document.querySelector('.filtro-btn.ativo').dataset.genero;
+            const termo = inputBusca.value.toLowerCase().trim();
+            cards.forEach(card => {
+                const generoCard = card.dataset.genero;
+                const titulo = card.querySelector('.titulo').textContent.toLowerCase();
+                const matchGenero = (generoAtivo === 'todos' || generoCard === generoAtivo);
+                const matchBusca = !termo || titulo.includes(termo);
+                card.classList.toggle('hidden', !(matchGenero && matchBusca));
+            });
+        }
+
+        botoes.forEach(botao => {
+            botao.addEventListener('click', () => {
+                botoes.forEach(b => b.classList.remove('ativo'));
+                botao.classList.add('ativo');
+                atualizarFiltros();
+            });
+        });
+
+        inputBusca.addEventListener('input', atualizarFiltros);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            atualizarFiltros();
+            confetti({ particleCount: 180, spread: 90, origin: { y: 0.6 }, colors: ['#E50914', '#ffffff', '#000000'] });
+            setTimeout(() => confetti({ particleCount: 80, angle: 60, spread: 50, origin: { x: 0.1, y: 0.8 } }), 800);
+        });
+    </script>
+</body>
+</html>
